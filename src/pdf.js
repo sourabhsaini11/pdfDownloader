@@ -38,8 +38,6 @@ const styles = StyleSheet.create({
 
 // Create Document Components
 const MyDocument = () => (
-  <Document>
-    <Page size="A4" style={styles.page}>  
     <div style={styles.section}>    
         <div style={{display: "flex",flexDirection:'row',alignItems:'center'}}>
             <div style={{border:'1px solid black',flex:1}}>
@@ -147,31 +145,31 @@ const MyDocument = () => (
             Bank Details: STATE BANK OF INDAI, Shivaji Nagar, Gurgaon
             Account No. 30987891002, IFS Code: SBIN000448
           </div>
-          <div style={{...styles.innerDiv,alignItems:'flex-end',display:'flex'}}>TOTAL TAXABLE AMOUNT</div>
+          <div style={{...styles.innerDiv}}>TOTAL TAXABLE AMOUNT</div>
           <div style={styles.innerDiv}>2400</div>
         </div>
-        <div style={styles.outerdiv}>
-          <div style={{...styles.innerDiv,alignItems:'flex-end',display:'flex'}}><h6>Terms And Conditions:
+        <div style={{...styles.outerDiv,background:'green'}}>
+          <div style={{...styles.innerDiv, height: '100%', border: '1 px solid black'}}><h6>Terms And Conditions:
               1. Payment by A/c Payee or crossed cheque is requested, if cheque is dishonoured then the penalty of Rs. 350/- will be charged extra.
               2. Seller is not responsible for any loss or damage of goods in transit.
               3. Buyer undertakes to submit prescribed sales tax declaration to the seller on demand.
               4. All disputes subject to Gurgaon Jurisdiction.</h6></div>
-          <div style={{...styles.innerDiv,alignItems:'flex-end',display:'flex'}}>TOTAL GST</div>
-          <div style={styles.innerDiv}>40</div>
+          <div style={{...styles.innerDiv, height: '100%', border: '1px solid black'}}>TOTAL GST</div>
+          <div style={{ ...styles.innerDiv, height: '100%', border: '1px solid black'}}>40</div>
         </div>
-        <div style={styles.outerdiv}>
+        <div style={styles.outerDiv}>
           <div style={styles.innerDiv}></div>
-          <div style={{...styles.innerDiv,alignItems:'flex-end',display:'flex'}}>FREIGHT, INSURANCE</div>
+          <div style={{...styles.innerDiv}}>FREIGHT, INSURANCE</div>
           <div style={styles.innerDiv}>0</div>
         </div>
-        <div style={styles.outerdiv}>
+        <div style={styles.outerDiv}>
           <div style={styles.innerDiv}></div>
-          <div style={{...styles.innerDiv,alignItems:'flex-end',display:'flex'}}>PACKAGING AND FORWARDING</div>
+          <div style={{...styles.innerDiv}}>PACKAGING AND FORWARDING</div>
           <div style={styles.innerDiv}>0</div>
         </div>
-        <div style={styles.outerdiv}>
+        <div style={styles.outerDiv}>
           <div style={styles.innerDiv}></div>
-          <div style={{...styles.innerDiv,alignItems:'flex-end',display:'flex'}}>INVOICE TOTAL</div>
+          <div style={{...styles.innerDiv}}>INVOICE TOTAL</div>
           <div style={styles.innerDiv}>23146</div>
         </div>
         <div style={styles.outerdiv}>
@@ -180,8 +178,6 @@ const MyDocument = () => (
         <div style={styles.innerDiv}></div>
         </div>
       </div>
-    </Page>
-  </Document>
 );
 
 export default MyDocument;

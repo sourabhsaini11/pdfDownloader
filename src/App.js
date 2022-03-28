@@ -8,7 +8,7 @@ import { PDFDownloadLink } from "@react-pdf/renderer";
 const App = () => {
   return (
     <div className="App">
-        <PDFDownloadLink document={<MyDocument />} fileName="FORM">
+        {/* <PDFDownloadLink document={<MyDocument />} fileName="FORM">
         {({ loading }) =>
           loading ? (
             <button>Loading Document...</button>
@@ -16,7 +16,7 @@ const App = () => {
             <button>Download</button>
           )
         }
-      </PDFDownloadLink>
+      </PDFDownloadLink> */}
       <MyDocument />
     </div>
   );
